@@ -1,0 +1,37 @@
+
+.list-teams{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width:1000px;
+    /* height:200px; */
+    
+
+}
+
+.each-team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(150, 157, 163, 0.493);
+    border: 1px solid white;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    width:350px;
+    border-radius: 12px;
+    margin: 24px;
+    height: 115px;
+}
+
+.each-team-logo{
+    width:70px;
+    margin:10px;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}

@@ -1,0 +1,38 @@
+.match-card-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 34, 34);;
+    height:400px;
+    width:250px;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    margin:15px;
+}
+
+.match-card-main-div img{
+    width: 150px;
+    height: 150px;
+}
+
+.match-card-main-div div{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.Won{
+    color: green;
+}
+
+.Lost{
+    color: red;
+}
+
+.recent-matches-main-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+.home-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    font-family: 'Bree Serif';
+    color: #fff;
+}
+
+.logo-head{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.ipl-logo{
+    width:30px;
+    margin: 4px;
+}
+
+.logo-head h1{
+    font-size: 40px;
+}
+
+.content-div{
+    height:100%;
+}
+

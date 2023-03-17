@@ -1,5 +1,6 @@
 import SideNavBar from "../../components/SideNavBar";
 import TopNavBar from "../../components/TopNavBar";
+import SavedVideosPageContent from "../../components/savedPageContent";
 import { MainContainer } from "../HomePage/styleComponents";
 
 const SavedVideosPage = () => {
@@ -8,7 +9,7 @@ const SavedVideosPage = () => {
       <TopNavBar />
       <MainContainer>
         <SideNavBar />
-        <div>Saved videos</div>
+        <SavedVideosPageContent />
       </MainContainer>
     </>
   );

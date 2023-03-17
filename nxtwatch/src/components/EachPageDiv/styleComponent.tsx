@@ -15,6 +15,13 @@ export const EachPageCont = styled.div`
     }
   }
 
+  .navlink{
+    
+    color: ${({theme}) => theme.color};
+    text-decoration: inherit;
+
+  }
+
   `;
 export const IconTextDiv = styled.div`
 

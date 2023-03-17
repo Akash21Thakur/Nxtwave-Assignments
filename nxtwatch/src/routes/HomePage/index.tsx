@@ -57,7 +57,7 @@ const HomePage = inject("themeStore")((props: Props) => {
   //   }
 
   const { themeStore } = props as InjectedProps;
-  console.log(themeStore);
+  // console.log(themeStore);
 
   return (
     <>

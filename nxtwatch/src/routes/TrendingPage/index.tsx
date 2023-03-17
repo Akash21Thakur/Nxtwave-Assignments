@@ -1,5 +1,6 @@
 import SideNavBar from "../../components/SideNavBar";
 import TopNavBar from "../../components/TopNavBar";
+import TrendingPageContent from "../../components/TrendingPageContent";
 import { MainContainer } from "../HomePage/styleComponents";
 
 const TrendingPage = () => {
@@ -8,7 +9,7 @@ const TrendingPage = () => {
       <TopNavBar />
       <MainContainer>
         <SideNavBar />
-        <div>Trending Page</div>
+        <TrendingPageContent />
       </MainContainer>
     </>
   );

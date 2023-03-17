@@ -14,6 +14,7 @@ import SavedVideosPage from './routes/SavedVideosPage';
 import GamingPage from './routes/GamingPage';
 import TrendingPage from './routes/TrendingPage';
 import ThemeStore from './stores/themeStore';
+import VideoPlayerDiv from './routes/VideoPlayerDiv';
 
 interface InjectedProps {
   themeStore: ThemeStore;
@@ -46,7 +47,7 @@ const App: React.FC = inject('themeStore')(observer(((props) => {
         <ThemeProvider theme={themeStore.isDark ? darkTheme : lightTheme}>
 
         <GlobalStyle />
-        <BrowserRouter>
+        <BrowserRouter> 
                 
            <Routes>        
               <Route path="/login" element={<LoginPage/>}/>
@@ -54,6 +55,7 @@ const App: React.FC = inject('themeStore')(observer(((props) => {
               <Route path="/trending" element={<TrendingPage />}/>
               <Route path="/gaming" element={<GamingPage />}/>
               <Route path="/saved-videos" element={<SavedVideosPage />}/>
+              <Route path='/videos/:id' element={<VideoPlayerDiv/>} />
               {/* </Route> */}
                 
               

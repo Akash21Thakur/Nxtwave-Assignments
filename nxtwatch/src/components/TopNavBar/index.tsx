@@ -1,7 +1,9 @@
 import Cookies from "js-cookie";
 import { inject, observer } from "mobx-react";
 import { useContext } from "react";
-import { Navigate } from "react-router";
+import { Navigate, useNavigate} from "react-router";
+
+// import {use}
 // import { ThemeContext1 } from "../../App";
 import { DARK_THEME_LOGO, LIGHT_THEME_LOGO, WATCH_LOGO_DARK } from "../../constants/logos";
 import ThemeStore from "../../stores/themeStore";
@@ -32,6 +34,8 @@ const TopNavBar = inject("themeStore")(observer((props: any) => {
         themeStore.toggleTheme();
     }
 
+    const navigate=useNavigate();
+
     const handleLogout = () => {
       // const onClickLogout = () => {
       //   Cookie.remove('jwt_token')
@@ -40,7 +44,7 @@ const TopNavBar = inject("themeStore")(observer((props: any) => {
       // }
         
                 Cookies.remove('jwt_token');
-                 <Navigate to='/login' />
+                 navigate('/login');
             
     }
 
